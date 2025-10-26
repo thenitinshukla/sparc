@@ -1,0 +1,6 @@
+N = 1000
+R = 1.0
+dt = 0.001
+tend = 0.01
+SAVE_INTERVAL = 10
+species electron 1.0

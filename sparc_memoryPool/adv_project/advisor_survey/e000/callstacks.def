@@ -1,0 +1,16 @@
+# callstacks file version: 8
+#    rowid	    parent	       rva	 loop	 system	                                function	binary	instance_start_rva	instance_size	instance_end_rva	finst_rowid	roi	is_inlined	jit_method_id	tripcounts_roi	flops_roi	cachesim_roi	data_transfer_roi	projection_roi
+         1	        -1	     22736	    0	      0	                                  _start	/leonardo_work/cin_staff/nshukla1/sparc/sparc_memoryPool/sparc_mempool	22736	47	0	1	0	0	0	0	0	0	0	0
+         2	        -1	     22781	    0	      0	                                  _start	/leonardo_work/cin_staff/nshukla1/sparc/sparc_memoryPool/sparc_mempool	22736	47	0	1	0	0	0	0	0	0	0	0
+         3	        12	    239588	    1	      1	     [Loop@0x3a75e in __libc_start_main]	/lib64/libc.so.6	239454	261	0	5	0	0	0	0	0	0	0	0
+         4	         7	     17793	    1	      0	                 [Loop@0x404550 in main]	/leonardo_work/cin_staff/nshukla1/sparc/sparc_memoryPool/sparc_mempool	17744,18520,19592,20036,20503,20771,20881,20958,21800,22102,22211,22306	150,1006,422,149,57,44,29,10,14,11,31,10	19536,22351,22341,22331	2	0	0	0	0	0	0	0	0
+         5	        10	     27088	    1	      0	  [Loop@0x4069b8 in sortParticlesStdPar]	/leonardo_work/cin_staff/nshukla1/sparc/sparc_memoryPool/sparc_mempool	27064	203	27267	7	0	0	0	0	0	0	0	0
+         6	         3	     17712	    0	      0	                                    main	/leonardo_work/cin_staff/nshukla1/sparc/sparc_memoryPool/sparc_mempool	14160	8350	0	3	0	0	0	0	0	0	0	0
+         7	         6	     17744	    1	      0	                 [Loop@0x404530 in main]	/leonardo_work/cin_staff/nshukla1/sparc/sparc_memoryPool/sparc_mempool	17712,18520,19536,19592,20036,20503,20881,20958,21800,22102,22211,22306	182,1006,50,422,149,312,29,10,14,11,31,10	22351,22341,22331,20968	4	0	0	0	0	0	0	0	0
+         8	         3	     17793	    0	      0	                                    main	/leonardo_work/cin_staff/nshukla1/sparc/sparc_memoryPool/sparc_mempool	14160	8350	0	3	0	0	0	0	0	0	0	0
+         9	         4	     27035	    0	      0	                     sortParticlesStdPar	/leonardo_work/cin_staff/nshukla1/sparc/sparc_memoryPool/sparc_mempool	26816	488	0	8	0	0	0	0	0	0	0	0
+        10	         9	     27064	    1	      0	  [Loop@0x40699b in sortParticlesStdPar]	/leonardo_work/cin_staff/nshukla1/sparc/sparc_memoryPool/sparc_mempool	27035,27288	242,9	27277	9	0	0	0	0	0	0	0	0
+        11	         4	     27088	    0	      0	                     sortParticlesStdPar	/leonardo_work/cin_staff/nshukla1/sparc/sparc_memoryPool/sparc_mempool	26816	488	0	8	0	0	0	0	0	0	0	0
+        12	         2	    239454	    0	      1	                       __libc_start_main	/lib64/libc.so.6	239360	376	0	6	0	0	0	0	0	0	0	0
+        13	         2	    239588	    0	      1	                       __libc_start_main	/lib64/libc.so.6	239360	376	0	6	0	0	0	0	0	0	0	0
+        14	        -1	         0	    0	      0	                [Unknown stack frame(s)]	n/a	0	0	0	11	0	0	0	0	0	0	0	0

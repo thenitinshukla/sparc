@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- <!DOCTYPE IntelParallelAdvisorSummaryCollection SYSTEM  "IntelParallelAdvisorSummaryCollection.dtd"> -->
+
+<IntelParallelAdvisorSummary version="" 
+                             kind="DATAKIND_SURVEY_EX" >
+  <hotspot filename="/leonardo_work/cin_staff/nshukla1/sparc/main_sparc_serial/src/core/sort_particles.cpp"
+           line_no="10"
+           routine="sortParticles"
+           is_vectorized="0"
+           self_time="1.106698E+02"
+           total_time="1.224300E+02"
+           trip_counts=""
+           func_instance="17"
+           priority="0"/>
+  <hotspot filename="/leonardo_work/cin_staff/nshukla1/sparc/main_sparc_serial/src/core/compute_energy.cpp"
+           line_no="17"
+           routine="computeEnergy"
+           is_vectorized="0"
+           self_time="7.009989E+00"
+           total_time="7.019991E+00"
+           trip_counts=""
+           func_instance="6"
+           priority="0"/>
+  <hotspot filename="/leonardo_work/cin_staff/nshukla1/sparc/main_sparc_serial/src/core/update_positions.cpp"
+           line_no="13"
+           routine="updatePositions"
+           is_vectorized="0"
+           self_time="7.000892E-02"
+           total_time="7.000892E-02"
+           trip_counts=""
+           func_instance="39"
+           priority="0"/>
+  <hotspot filename="/leonardo_work/cin_staff/nshukla1/sparc/main_sparc_serial/src/core/sort_particles.cpp"
+           line_no="9"
+           routine="sortParticles"
+           is_vectorized="0"
+           self_time="6.000582E-02"
+           total_time="1.224900E+02"
+           trip_counts=""
+           func_instance="19"
+           priority="0"/>
+  <hotspot filename="/leonardo_work/cin_staff/nshukla1/sparc/main_sparc_serial/src/core/update_positions.cpp"
+           line_no="9"
+           routine="updatePositions"
+           is_vectorized="0"
+           self_time="5.999622E-02"
+           total_time="5.999622E-02"
+           trip_counts=""
+           func_instance="33"
+           priority="0"/>
+</IntelParallelAdvisorSummary >

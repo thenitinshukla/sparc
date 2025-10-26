@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SPARC Simulation Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #000;
+            color: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #111;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,100,255,0.3);
+        }
+        h1 {
+            text-align: center;
+            color: #0ff;
+            text-shadow: 0 0 10px rgba(0,255,255,0.5);
+        }
+        .image-container {
+            text-align: center;
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #000;
+            border-radius: 10px;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #0ff;
+            border-radius: 5px;
+            box-shadow: 0 0 15px rgba(0,255,255,0.3);
+        }
+        .image-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 15px 0;
+            color: #ff0;
+            text-shadow: 0 0 5px rgba(255,255,0,0.5);
+        }
+        .comparison {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .comparison-panel {
+            flex: 1;
+            min-width: 300px;
+            margin: 10px;
+            padding: 15px;
+            background-color: #222;
+            border-radius: 8px;
+        }
+        .comparison-title {
+            text-align: center;
+            color: #f0f;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SPARC Simulation Analysis Results</h1>
+        
+        <div class="image-container">
+            <div class="image-title">Improved Comprehensive Analysis: Energy, Positions, and Distributions</div>
+            <img src="output/comprehensive_analysis_improved.png" alt="Improved Comprehensive Analysis">
+        </div>
+        
+        <div class="image-container">
+            <div class="image-title">Improved Radial Distribution Evolution Over Time</div>
+            <img src="output/radial_distribution_evolution_improved.png" alt="Improved Radial Distribution Evolution">
+        </div>
+        
+        <div class="comparison">
+            <div class="comparison-panel">
+                <div class="comparison-title">Original Visualization</div>
+                <div class="image-container">
+                    <div class="image-title">Comprehensive Analysis</div>
+                    <img src="output/comprehensive_analysis.png" alt="Comprehensive Analysis">
+                </div>
+            </div>
+            
+            <div class="comparison-panel">
+                <div class="comparison-title">Improved Visualization</div>
+                <div class="image-container">
+                    <div class="image-title">Comprehensive Analysis (Improved)</div>
+                    <img src="output/comprehensive_analysis_improved.png" alt="Comprehensive Analysis (Improved)">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

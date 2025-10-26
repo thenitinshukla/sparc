@@ -1,0 +1,17 @@
+# Test input file for SPARC simulation
+N = 2000000000
+R = 1.0
+dt = 0.001
+tend = 1
+
+tend = 1.0            # End time (same as Python)
+SAVE_INTERVAL = 100   # Save data every N steps
+MAX_SPECIES = 10      # Maximum number of particle species
+BUFFER_SIZE = 32768   # Buffer size for file I/O
+
+#SAVE_INTERVAL = 100
+#MAX_SPECIES = 2
+#BUFFER_SIZE = 32768
+
+species electron 1.0
+species proton 2000.0

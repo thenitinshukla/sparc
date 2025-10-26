@@ -1,0 +1,5 @@
+305 [140459545614080] INFO mrtehelpers.mrteenv <> - Product libs directory: /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-advisor-2024.1.0-xxju5zhmx75zzufp2f3e2hxkzzpmw56d/advisor/2024.1/lib64
+305 [140459545614080] INFO mrtehelpers.mrteenv <> - File mask: advixe_samplingmrte_clrprof*
+358 [140459545614080] INFO mrtehelpers.mrteenv <> - File name: lib
+358 [140459545614080] ERROR mrtehelpers.mrteenv <> - Failed to init shared library lib located at /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-advisor-2024.1.0-xxju5zhmx75zzufp2f3e2hxkzzpmw56d/advisor/2024.1/lib64, at file: vcs/mrtehelpers3/src/mrteenv/mrte_profiling_initializer.cpp:361
+358 [140459545614080] ERROR mrtehelpers.mrteenv <> - CLR support is disabled because profiler GUID is empty, at file: vcs/mrtehelpers3/src/mrteenv/mrte_profiling_initializer.cpp:185

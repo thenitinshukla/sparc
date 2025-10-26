@@ -1,0 +1,109 @@
+2 [140018142701504] INFO perfrun.launcher <> - Launcher main begin
+6 [140018142701504] INFO perfrun.launcher <> - MessageCatalogInit finished
+6 [140018142701504] INFO perfrun.launcher <> - Launcher instance created
+6 [140018142701504] INFO perfrun.launcher <> - argc = 7; cmdline = /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-advisor-2024.1.0-xxju5zhmx75zzufp2f3e2hxkzzpmw56d/advisor/2024.1/bin64/advixe-runss --ui-output-format xml --ui-output-fd 7 --option-file /leonardo_work/cin_staff/nshukla1/sparc/sparc_parallel/adv_project/advisor_survey/e000/hs000/config/runss.options 
+87 [140018142701504] INFO perfrun.launcher <> - create msngr2::ICliToolContext
+88 [140018142701504] INFO perfrun.launcher <> - create file finder object
+88 [140018142701504] INFO perfrun.launcher <> - create a result directory: pattern = /leonardo_work/cin_staff/nshukla1/sparc/sparc_parallel/adv_project/advisor_survey/e000/hs000 pid = 4294967295
+119 [140018142701504] INFO perfrun.sdk <> - checked that the directory /leonardo_work/cin_staff/nshukla1/sparc/sparc_parallel/adv_project/advisor_survey/e000/hs000 is a local directory
+267 [140018142701504] INFO perfrun.sdk <> - the directory /leonardo_work/cin_staff/nshukla1/sparc/sparc_parallel/adv_project/advisor_survey/e000/hs000 is located on a share or its FS ID is unknown 198183888
+267 [140018142701504] INFO perfrun.sdk <> - checked that the directory /scratch_local/advixe-tmp-nshukla1 is a local directory
+267 [140018142701504] INFO perfrun.sdk <> - the directory /scratch_local/advixe-tmp-nshukla1 is a local directory with FS type ID 1481003842
+267 [140018142701504] INFO perfrun.launcher <> - Create a local result directory /scratch_local/advixe-tmp-nshukla1/advixe-res-685247-22970742806691511 due to the user result path /leonardo_work/cin_staff/nshukla1/sparc/sparc_parallel/adv_project/advisor_survey/e000/hs000 is located on a share
+267 [140018142701504] INFO perfrun.launcher <> - create data directory = /scratch_local/advixe-tmp-nshukla1/advixe-res-685247-22970742806691511/data.0
+268 [140018142701504] INFO perfrun.launcher <> - create data directory = /leonardo_work/cin_staff/nshukla1/sparc/sparc_parallel/adv_project/advisor_survey/e000/hs000/data.0
+269 [140018142701504] INFO perfrun.launcher <> - Creating the master collection flag
+294 [140018142701504] INFO perfrun.launcher <> - Done creating the master collection flag
+311 [140017924294400] INFO perfrun.launcher <> - plugin [remoteplug] was disabled because it doesn't support the given collection type.
+311 [140017924294400] INFO perfrun.sdk <> - Allocating TMU :/scratch_local/advixe-tmp-nshukla1/advixe-res-685247-22970742806691511/data.0/systemcollector-685247-login05.leonardo.local.sc
+311 [140017924294400] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+312 [140017924294400] INFO perfrun.launcher <> - plugin [gpu] was disabled because it doesn't support the given collection type.
+312 [140017924294400] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+312 [140017924294400] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+312 [140017924294400] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+312 [140017924294400] INFO perfrun.mrte <> - system-wide mode is 0
+312 [140017924294400] INFO perfrun.mrte <> - Getting  mrte profiling environment ...
+365 [140017924294400] INFO perfrun.mrte <> - INTEL_MRTE_DATA_DIR=/scratch_local/advixe-tmp-nshukla1/advixe-res-685247-22970742806691511/data.0
+365 [140017924294400] INFO perfrun.mrte <> - INTEL_MRTE_HOST_NAME=login05.leonardo.local
+365 [140017924294400] INFO perfrun.mrte <> - JAVA_TOOL_OPTIONS=-agentlib:advixe_tpssmrte_javaprof_1.0 -Dsun.boot.library.path=/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-advisor-2024.1.0-xxju5zhmx75zzufp2f3e2hxkzzpmw56d/advisor/2024.1/lib32/runtime:/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-advisor-2024.1.0-xxju5zhmx75zzufp2f3e2hxkzzpmw56d/advisor/2024.1/lib64/runtime
+365 [140017924294400] INFO perfrun.mrte <> - LD_LIBRARY_PATH=/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-advisor-2024.1.0-xxju5zhmx75zzufp2f3e2hxkzzpmw56d/advisor/2024.1/lib32/runtime:/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-advisor-2024.1.0-xxju5zhmx75zzufp2f3e2hxkzzpmw56d/advisor/2024.1/lib64/runtime
+365 [140017924294400] INFO perfrun.mrte <> - Data directory: /scratch_local/advixe-tmp-nshukla1/advixe-res-685247-22970742806691511/data.0
+365 [140017924294400] INFO perfrun.mrte <> - Mrte plugin is initialized
+365 [140017924294400] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+365 [140017924294400] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+365 [140017924294400] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+365 [140017924294400] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+365 [140017924294400] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+365 [140017924294400] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+366 [140017924294400] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+366 [140017924294400] INFO perfrun.tpss <> - initialize tpss controller
+366 [140017924294400] INFO perfrun.tpss <> - configure collection mode: value = cpu:stack
+366 [140017924294400] INFO perfrun.tpss <> - default obj-size-min=1024
+366 [140017924294400] INFO perfrun.tpss <> - default hash-table-size=0
+366 [140017924294400] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+366 [140017924294400] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+366 [140017924294400] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+366 [140017924294400] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+366 [140017924294400] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+366 [140017924294400] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+366 [140017924294400] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+366 [140017924294400] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+366 [140017924294400] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+366 [140018142701504] INFO perfrun.launcher <> - set environment variable: LD_LIBRARY_PATH = /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-advisor-2024.1.0-xxju5zhmx75zzufp2f3e2hxkzzpmw56d/advisor/2024.1/lib32/runtime:/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-advisor-2024.1.0-xxju5zhmx75zzufp2f3e2hxkzzpmw56d/advisor/2024.1/lib64/runtime
+366 [140018142701504] INFO perfrun.launcher <> - set environment variable: INTEL_LIBITTNOTIFY32 = /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-advisor-2024.1.0-xxju5zhmx75zzufp2f3e2hxkzzpmw56d/advisor/2024.1/lib32/runtime/libittnotify_collector.so
+366 [140018142701504] INFO perfrun.launcher <> - set environment variable: INTEL_LIBITTNOTIFY64 = /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-advisor-2024.1.0-xxju5zhmx75zzufp2f3e2hxkzzpmw56d/advisor/2024.1/lib64/runtime/libittnotify_collector.so
+366 [140018142701504] INFO perfrun.launcher <> - set environment variable: INTEL_ITTNOTIFY_GROUPS = 
+366 [140018142701504] INFO perfrun.launcher <> - set environment variable: INTEL_JIT_PROFILER32 = /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-advisor-2024.1.0-xxju5zhmx75zzufp2f3e2hxkzzpmw56d/advisor/2024.1/lib32/runtime/libittnotify_collector.so
+366 [140018142701504] INFO perfrun.launcher <> - set environment variable: INTEL_JIT_PROFILER64 = /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-advisor-2024.1.0-xxju5zhmx75zzufp2f3e2hxkzzpmw56d/advisor/2024.1/lib64/runtime/libittnotify_collector.so
+366 [140018142701504] INFO perfrun.launcher <> - set environment variable: ENABLE_JITPROFILING = 1
+366 [140018142701504] INFO perfrun.launcher <> - set environment variable: CL_CONFIG_USE_VTUNE = True
+366 [140018142701504] INFO perfrun.launcher <> - set environment variable: KMP_FORKJOIN_FRAMES = 0
+366 [140018142701504] INFO perfrun.launcher <> - set environment variable: KMP_FORKJOIN_FRAMES_MODE = 0
+366 [140018142701504] INFO perfrun.launcher <> - set environment variable: INTEL_MRTE_DATA_DIR = /scratch_local/advixe-tmp-nshukla1/advixe-res-685247-22970742806691511/data.0
+366 [140018142701504] INFO perfrun.launcher <> - set environment variable: INTEL_MRTE_HOST_NAME = login05.leonardo.local
+366 [140018142701504] INFO perfrun.launcher <> - set environment variable: JAVA_TOOL_OPTIONS = -agentlib:advixe_tpssmrte_javaprof_1.0 -Dsun.boot.library.path=/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-advisor-2024.1.0-xxju5zhmx75zzufp2f3e2hxkzzpmw56d/advisor/2024.1/lib32/runtime:/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-advisor-2024.1.0-xxju5zhmx75zzufp2f3e2hxkzzpmw56d/advisor/2024.1/lib64/runtime
+366 [140018142701504] INFO perfrun.launcher <> - set environment variable: LD_LIBRARY_PATH = /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-advisor-2024.1.0-xxju5zhmx75zzufp2f3e2hxkzzpmw56d/advisor/2024.1/lib32/runtime:/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-advisor-2024.1.0-xxju5zhmx75zzufp2f3e2hxkzzpmw56d/advisor/2024.1/lib64/runtime
+366 [140018142701504] INFO perfrun.launcher <> - RpcServer: run RPC server to handle requests
+367 [140018142701504] INFO perfrun.launcher <> - Launcher: command line to start before modification = ./sparc_parallel input_file.txt
+368 [140018142701504] INFO perfrun.launcher <> - Launcher: command line to start after modification = /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-advisor-2024.1.0-xxju5zhmx75zzufp2f3e2hxkzzpmw56d/advisor/2024.1/bin64/pin -error_file /scratch_local/advixe-tmp-nshukla1/advixe-res-685247-22970742806691511/data.0/pinerr.tpsslog -detach_reattach -follow_execv -tool_load_option deepbind -t64 /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-advisor-2024.1.0-xxju5zhmx75zzufp2f3e2hxkzzpmw56d/advisor/2024.1/lib64/libtpsstool.so -t /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-advisor-2024.1.0-xxju5zhmx75zzufp2f3e2hxkzzpmw56d/advisor/2024.1/lib32/libtpsstool.so -server_name tpss_ipc.685247 -prd_dir /leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-advisor-2024.1.0-xxju5zhmx75zzufp2f3e2hxkzzpmw56d/advisor/2024.1 -- ./sparc_parallel input_file.txt
+368 [140018142701504] INFO perfrun.launcher <> - ProcessCreator object was created
+369 [140018142701504] INFO perfrun.launcher <> - Launcher: the process was started in suspend mode
+386 [140017924294400] WARN perfrun.system <> - Could not do anything with /sys/kernel/debug/kvm: boost::filesystem::status: Permission denied [system:13]: "/sys/kernel/debug/kvm", at file: vcs/perfrun1/plugins/system/src/trace_writer.cpp:787
+386 [140017924294400] WARN perfrun.system <> - Folder "/var/run/libvirt/qemu/"doesn't exist, at file: vcs/perfrun1/plugins/system/src/trace_writer.cpp:800
+403 [140017924294400] WARN perfrun.sdk <> - SEP tool is not available, at file: vcs/perfrun1/plugins/pluginsdk/src/device_mapper.cpp:767
+403 [140017924294400] WARN perfrun.sdk <> - SEP driver is not available, at file: vcs/perfrun1/plugins/pluginsdk/src/device_mapper.cpp:920
+403 [140017924294400] WARN perfrun.sdk <> - amplxe-perf tool is not available, at file: vcs/perfrun1/plugins/pluginsdk/src/device_mapper.cpp:783
+403 [140017924294400] WARN perfrun.sdk <> - Device mapping through perf is not available on current kernel, at file: vcs/perfrun1/plugins/pluginsdk/src/device_mapper.cpp:1120
+404 [140017924294400] WARN perfrun.sdk <> - SEP tool is not available, at file: vcs/perfrun1/plugins/pluginsdk/src/device_mapper.cpp:767
+404 [140017924294400] WARN perfrun.sdk <> - SEP driver is not available, at file: vcs/perfrun1/plugins/pluginsdk/src/device_mapper.cpp:920
+405 [140017924294400] WARN perfrun.sdk <> - SEP tool is not available, at file: vcs/perfrun1/plugins/pluginsdk/src/device_mapper.cpp:767
+405 [140017924294400] WARN perfrun.sdk <> - SEP driver is not available, at file: vcs/perfrun1/plugins/pluginsdk/src/device_mapper.cpp:920
+405 [140017924294400] WARN perfrun.sdk <> - amplxe-perf tool is not available, at file: vcs/perfrun1/plugins/pluginsdk/src/device_mapper.cpp:783
+405 [140017924294400] WARN perfrun.sdk <> - Device mapping through perf is not available on current kernel, at file: vcs/perfrun1/plugins/pluginsdk/src/device_mapper.cpp:1120
+405 [140017924294400] WARN perfrun.sdk <> - Failed to find xl binary on any of the system paths: /bin, /sbin, /usr/bin, /usr/sbin., at file: vcs/perfrun1/sdk/src/utils.cpp:204
+410 [140017924294400] INFO perfrun.vdso <> - Helper runtool '/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-advisor-2024.1.0-xxju5zhmx75zzufp2f3e2hxkzzpmw56d/advisor/2024.1/bin32/advixe-runss -dump-vdso -r /scratch_local/advixe-tmp-nshukla1/advixe-res-685247-22970742806691511 --tmp-dir /scratch_local/advixe-tmp-nshukla1' returned 1
+536 [140017924294400] INFO perfrun.vdso <> - Helper runtool '/leonardo/prod/spack/06/install/0.22/linux-rhel8-icelake/gcc-8.5.0/intel-oneapi-advisor-2024.1.0-xxju5zhmx75zzufp2f3e2hxkzzpmw56d/advisor/2024.1/bin64/advixe-runss -dump-vdso -r /scratch_local/advixe-tmp-nshukla1/advixe-res-685247-22970742806691511 --tmp-dir /scratch_local/advixe-tmp-nshukla1' returned 0
+536 [140017924294400] INFO perfrun.itt <> - start itt controller for pid #685324
+537 [140017924294400] INFO perfrun.tpss <> - start tpss controller for pid #685324
+587 [140018142701504] INFO perfrun.launcher <> - Launcher: all plugins were started
+587 [140018142701504] INFO perfrun.launcher <> - DirectoryMonitor object was created
+587 [140018142701504] INFO perfrun.launcher <> - DirectoryMonitor: a callback was added
+587 [140018142701504] INFO perfrun.launcher <> - DirectoryMonitor was started with pingTime = 1000
+587 [140018142701504] INFO perfrun.launcher <> - DeadlineTimer is going to be constructed
+587 [140018142701504] INFO perfrun.launcher <> - DeadlineTimer: a callback was added
+601 [140018142701504] INFO perfrun.launcher <> - Launcher: resume the profiled application and  wait its termination or stop command
+668 [140018142701504] INFO perfrun.launcher <> - Launcher: the profiled application was terminated  with exit code = 127
+668 [140017924294400] WARN perfrun.launcher <> - can't send #0 signal to the process with pid #685324 - , at file: vcs/perfrun1/launcher/src/signal_handler_lin.cpp:53
+672 [140017924294400] WARN perfrun.launcher <> - can't send #0 signal to the process with pid #685324 - , at file: vcs/perfrun1/launcher/src/signal_handler_lin.cpp:53
+673 [140017924294400] INFO perfrun.itt <> - detach itt controller
+673 [140017924294400] INFO perfrun.itt <> - detach itt controller done
+673 [140017924294400] INFO perfrun.tpss <> - stop tpss controller
+673 [140017924294400] INFO perfrun.sdk <> - De-allocating TMU: /scratch_local/advixe-tmp-nshukla1/advixe-res-685247-22970742806691511/data.0/systemcollector-685247-login05.leonardo.local.sc
+673 [140017924294400] INFO perfrun.system <> - closed the system trace file: /scratch_local/advixe-tmp-nshukla1/advixe-res-685247-22970742806691511/data.0/systemcollector-685247-login05.leonardo.local.sc
+673 [140018142701504] INFO perfrun.launcher <> - Launcher: all plugins were stopped.
+673 [140018142701504] INFO perfrun.launcher <> - DeadlineTimer is going to be destroyed
+674 [140018142701504] INFO perfrun.launcher <> - DeadlineTimer was destroyed
+674 [140018142701504] INFO perfrun.launcher <> - DirectoryMonitor object was destroyed
+674 [140018142701504] WARN perfrun.launcher <> - Stop command is ignored because it is received when collection is already stopped, at file: vcs/perfrun1/launcher/src/command_handler.cpp:226
+689 [140018142701504] INFO perfrun.launcher <> - Application exit code: 127
+690 [140018142701504] INFO perfrun.launcher <> - Exit code: 4

@@ -1,0 +1,15 @@
+# callstacks file version: 8
+#    rowid	    parent	       rva	 loop	 system	                                function	binary	instance_start_rva	instance_size	instance_end_rva	finst_rowid	roi	is_inlined	jit_method_id	tripcounts_roi	flops_roi	cachesim_roi	data_transfer_roi	projection_roi
+         1	        -1	     22592	    0	      0	                                  _start	/leonardo_work/cin_staff/nshukla1/sparc/sparc_std/sparc_std	22592	47	0	1	0	0	0	0	0	0	0	0
+         2	        -1	     22637	    0	      0	                                  _start	/leonardo_work/cin_staff/nshukla1/sparc/sparc_std/sparc_std	22592	47	0	1	0	0	0	0	0	0	0	0
+         3	        11	    239588	    1	      1	     [Loop@0x3a75e in __libc_start_main]	/lib64/libc.so.6	239454	261	0	5	0	0	0	0	0	0	0	0
+         4	         7	     18630	    1	      0	                 [Loop@0x404880 in main]	/leonardo_work/cin_staff/nshukla1/sparc/sparc_std/sparc_std	18560,19336,20400,20479,20666,20934,21036,21157,22065,22171	148,1006,57,152,57,44,29,10,42,10	20352,22196,22216,22206	2	0	0	0	0	0	0	0	0
+         5	         9	     29137	    1	      0	      [Loop@0x4071a0 in updatePositions]	/leonardo_work/cin_staff/nshukla1/sparc/sparc_std/sparc_std	29088,29453	67,69	29155,29522	7	0	0	0	0	0	0	0	0
+         6	         3	     18528	    0	      0	                                    main	/leonardo_work/cin_staff/nshukla1/sparc/sparc_std/sparc_std	14560	7825	0	3	0	0	0	0	0	0	0	0
+         7	         6	     18560	    1	      0	                 [Loop@0x404860 in main]	/leonardo_work/cin_staff/nshukla1/sparc/sparc_std/sparc_std	18528,18560,19336,20352,20400,20479,20666,21036,21157,22065,22171	29,148,1006,45,57,152,312,29,10,42,10	22196,22216,22206,21167	4	0	0	0	0	0	0	0	0
+         8	         3	     18630	    0	      0	                                    main	/leonardo_work/cin_staff/nshukla1/sparc/sparc_std/sparc_std	14560	7825	0	3	0	0	0	0	0	0	0	0
+         9	         4	     29088	    0	      0	                         updatePositions	/leonardo_work/cin_staff/nshukla1/sparc/sparc_std/sparc_std	28880	657	0	8	0	0	0	0	0	0	0	0
+        10	         4	     29137	    0	      0	                         updatePositions	/leonardo_work/cin_staff/nshukla1/sparc/sparc_std/sparc_std	28880	657	0	8	0	0	0	0	0	0	0	0
+        11	         2	    239454	    0	      1	                       __libc_start_main	/lib64/libc.so.6	239360	376	0	6	0	0	0	0	0	0	0	0
+        12	         2	    239588	    0	      1	                       __libc_start_main	/lib64/libc.so.6	239360	376	0	6	0	0	0	0	0	0	0	0
+        13	        -1	         0	    0	      0	                [Unknown stack frame(s)]	n/a	0	0	0	10	0	0	0	0	0	0	0	0

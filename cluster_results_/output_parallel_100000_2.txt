@@ -1,0 +1,20 @@
+SPARC Parallel Implementation
+=============================
+Input file: ./cluster_results_/input_parallel_100000_2.txt
+Number of particles: 1000
+Sphere radius: 1
+Time step size: 0.01
+End time: 0.1
+Number of time steps: 10
+Species: electron (mass: 1)
+
+Particles initialized
+Sorting particles initially
+Initial sorting completed
+Initial energy: 1.052923e+01
+At time 0.0, energy conservation error: 0.021011%
+Final sorting
+Final energy: 1.050921e+01
+
+Simulation completed successfully!
+Execution time: 3 ms

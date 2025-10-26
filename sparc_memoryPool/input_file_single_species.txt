@@ -1,0 +1,11 @@
+# Simulation Parameters for single species comparison
+N = 10000000           # Total number of particles (same as Python)
+R = 1.0               # Radius of the sphere (same as Python)
+dt = 0.0001            # Time step (same as Python)
+tend = 1.0            # End time (same as Python)
+SAVE_INTERVAL = 100   # Save data every N steps
+MAX_SPECIES = 10      # Maximum number of particle species
+BUFFER_SIZE = 32768   # Buffer size for file I/O
+
+# Single particle species to match Python SPARC
+species proton  1.0        # Single species with iqom = 1 (same as Python)
