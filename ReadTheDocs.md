@@ -793,10 +793,9 @@ Please include:
 ### Scientific Papers
 
 1. Davidson, R. C., & Qin, H. (2001). *Physics of Intense Charged Particle Beams in High Energy Accelerators*. World Scientific.
-
 2. Piel, A. (2010). *Plasma Physics: An Introduction to Laboratory, Space, and Fusion Plasmas*. Springer.
-
 3. Dawson, J. M. (1983). "Particle simulation of plasmas". *Reviews of Modern Physics*, 55(2), 403.
+4. Boella, E. JPP (2015) https://arxiv.org/pdf/1511.08717
 
 ### Technical Documentation
 
