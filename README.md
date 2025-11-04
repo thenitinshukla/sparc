@@ -340,25 +340,6 @@ Contributions are welcome! Please see:
 
 ---
 
-## FAQ
-
-**Q: Which implementation should I use?**  
-A: Start with `main_sparc_serial` for small problems (N < 10K) and learning. Use `sparc_parallel` or `sparc_parunseq` for larger problems on multi-core systems.
-
-**Q: How large can N be?**  
-A: Up to ~1 million particles on a desktop with 64 GB RAM. On HPC clusters, 10+ million is feasible.
-
-**Q: Can I add GPU support?**  
-A: Yes! The modular design makes it straightforward to add CUDA or OpenCL implementations.
-
-**Q: Why is Python so slow?**  
-A: Python overhead is significant. But it's excellent for prototyping and validation. For production, use C++ implementations.
-
-**Q: How do I visualize my results?**  
-A: Use `opengl_realtime_animation.py` for interactive viewing, or `visualize.py` for static plots.
-
----
-
 ## Troubleshooting
 
 ### Build Errors
