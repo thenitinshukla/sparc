@@ -15,7 +15,7 @@ SPARC simulates the dynamics of charged particles in a spherical plasma where io
 ### Key Features
 
 - 🚀 **High Performance**: 50-180x faster than pure Python
-- ⚡ **Parallel Computing**: OpenMP and C++17 par_unseq implementations
+- ⚡ **Parallel Computing**: C++17 par_unseq implementations
 - 🎯 **Exact Physics**: Solves exact equations of motion, not approximations
 - 📊 **Validated**: Energy conservation < 0.001% error
 - 🎨 **Beautiful Visualizations**: Real-time OpenGL rendering with cosmic aesthetics
@@ -40,7 +40,7 @@ brew install gcc cmake tbb python3
 pip3 install numpy matplotlib pandas scipy pygame PyOpenGL
 ```
 
-### Build and Run (3 minutes)
+### Build and Run 
 
 ```bash
 # Clone or navigate to repository
@@ -81,15 +81,6 @@ python opengl_realtime_animation.py ../main_sparc_serial/output/
 ## Implementations
 
 SPARC includes 6 different implementations, each optimized for different use cases:
-
-| Implementation | Language | Parallelism | Speedup | Best For |
-|----------------|----------|-------------|---------|----------|
-| **pythonsparc** | Python | None | 1x | Reference, prototyping, learning |
-| **main_sparc_serial** | C++ | None | ~50x | Debugging, validation, baseline |
-| **sparc_std** | C++ | None | ~60x | Standard C++ implementation |
-| **sparc_memoryPool** | C++17 | TBB | ~80x | Memory-intensive workloads |
-| **sparc_parallel** | C++17 | OpenMP | ~150x | Multi-core systems (8+ cores) |
-| **sparc_parunseq** | C++17 | par_unseq | ~180x | Modern CPUs with SIMD |
 
 ### Performance Highlights
 
@@ -330,13 +321,6 @@ Contributions are welcome! Please see:
 3. Add tests for new functionality
 4. Update documentation
 5. Submit a pull request
-
-### Code Style
-
-- C++: Follow Google C++ Style Guide
-- Python: Follow PEP 8
-- Document all functions
-- Include unit tests
 
 ---
 
