@@ -1,0 +1,9 @@
+# Weak Scaling Results
+# Run timestamp: 20260126_142630
+# Directory: slurm_runs/weak_scaling_20260126_142630
+# 
+# Nodes  ExecutionTime(s)
+1        1359.177
+2        1500.222
+4        1582.279
+8        1977.347

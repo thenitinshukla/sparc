@@ -1,0 +1,14 @@
+# Simulation Parameters - Weak Scaling
+# Node count: 4
+# Particles per node: 50000
+N = 200000              # Total number of particles
+R = 1.0               # Radius of the sphere
+dt = 0.001            # Time step
+tend = 1.0            # End time
+SAVE_INTERVAL = 100   # Save data every N steps
+MAX_SPECIES = 10      # Maximum number of particle species
+BUFFER_SIZE = 32768   # Buffer size for file I/O
+
+# Particle Species
+species electron  1.0        # Species 1: electrons
+species proton    1836.0     # Species 2: protons

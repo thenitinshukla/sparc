@@ -1,0 +1,31 @@
+(B[m=== SPARC-MPI Simulation ===
+Total particles: 400000
+MPI ranks: 896
+Particles per rank (approx): 446
+Time steps: 1000
+Species: 2
+============================
+
+Initial Maximum r2 value: 9.999987e-01
+Initial energy: 2.105489e+01
+
+Step      0 | Time 0.0000 | Energy error: 0.000105%
+Step    100 | Time 0.1000 | Energy error: 0.010023%
+Step    200 | Time 0.2000 | Energy error: 0.017096%
+Step    300 | Time 0.3000 | Energy error: 0.020381%
+Step    400 | Time 0.4000 | Energy error: 0.020664%
+Step    500 | Time 0.5000 | Energy error: 0.019242%
+Step    600 | Time 0.6000 | Energy error: 0.017130%
+Step    700 | Time 0.7000 | Energy error: 0.014914%
+Step    800 | Time 0.8000 | Energy error: 0.012867%
+Step    900 | Time 0.9000 | Energy error: 0.011081%
+
+=== Performance Summary ===
+Total execution time: 3.029 seconds
+Throughput: 6.603 GFLOPS
+Memory bandwidth: 76.070 GB/s
+MPI processes: 896
+===========================
+
+Start: 2026-02-02 00:04:04
+Finish: 2026-02-02 00:04:19

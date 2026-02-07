@@ -1,0 +1,11 @@
+Weak Scaling Benchmark Summary
+Generated: Sun Feb  1 22:21:27 CET 2026
+Particles per node: 50000
+======================================
+Nodes      Total_Particles Total_Tasks     Job_ID    
+--------------------------------------
+1          50000           112             33254511  
+2          100000          224             33254512  
+4          200000          448             33254513  
+8          400000          896             33254514  
+16         800000          1792            33254515  

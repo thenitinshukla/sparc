@@ -1,0 +1,9 @@
+# Strong Scaling Results
+# Run timestamp: 20260126_120953
+# Directory: slurm_runs/strong_scaling_20260126_120953
+# 
+# Nodes  ExecutionTime(s)
+1        1132.976
+2        609.358
+4        296.073
+8        182.948
