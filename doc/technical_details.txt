@@ -1,0 +1,98 @@
+SPARC-MPI Optimized Implementation Technical Details
+
+This document details the specific optimizations implemented to overcome the scalability limitations of the baseline MPI version.
+
+================================================================================
+1. Histogram-Based Splitter Selection (Eliminating Root Bottleneck)
+================================================================================
+
+WHY IT IS BETTER:
+In the standard Sample Sort (Baseline), all ranks verify a subset of samples to the root rank. The root then sorts these samples to pick splitters. As N increases, the root becomes a bottleneck due to communication volume and local sorting time.
+
+The Optimized implementation uses a distributed histogram approach. Ranks compute local histograms of particle radii, which are then globally summed using MPI_Allreduce. This is strictly better because:
+1. It eliminates the gather-to-root step entirely.
+2. MPI_Allreduce is highly optimized on HPC networks (log P scaling).
+3. All ranks compute identical splitters deterministically without exchanging particles samples.
+
+CODE SNIPPET (src/core/sort_particles.cpp):
+--------------------------------------------------------------------------------
+// Global histogram using Allreduce (no root bottleneck!)
+MPI_Allreduce(local_hist.data(), global_hist.data(), NUM_BINS, MPI_LONG_LONG, MPI_SUM, mpi.comm);
+
+// Compute splitters from global histogram
+// All ranks compute the same splitters (deterministic)
+std::vector<double> splitters(size - 1);
+long long total = std::accumulate(global_hist.begin(), global_hist.end(), 0LL);
+long long target_per_rank = (total + size - 1) / size;
+
+for (int b = 0; b < NUM_BINS && splitter_idx < size - 1; b++) {
+    cumsum += global_hist[b];
+    if (cumsum >= target_per_rank * (splitter_idx + 1)) {
+        splitters[splitter_idx++] = r2_min_global + (b + 1) * bin_width;
+    }
+}
+--------------------------------------------------------------------------------
+
+================================================================================
+2. K-Way Merge for Final Sorting
+================================================================================
+
+WHY IT IS BETTER:
+After particles are exchanged (MPI_Alltoallv), the Baseline implementation performed a full `std::sort` on the received buffer. This is O(N log N).
+
+The Optimized implementation exploits the fact that incoming data from each rank is *already sorted* (a property of the sender locally sorting before split determination). Instead of a full sort, we perform a K-way merge using a priority queue. This reduces the complexity to O(N log P), where P is the number of ranks. Since P << N, this is a significant speedup for local processing.
+
+CODE SNIPPET (src/core/sort_particles.cpp):
+--------------------------------------------------------------------------------
+// Each chunk from a source rank is already sorted
+// Use priority queue to merge them efficiently
+std::priority_queue<MergeElement, std::vector<MergeElement>, std::greater<MergeElement>> pq;
+
+// Initialize priority queue with first element from each non-empty chunk
+for (int c = 0; c < size; c++) {
+    if (recv_counts[c] > 0) {
+        pq.push({recv_r2[recv_displs[c]], recv_displs[c], c});
+    }
+}
+
+// Merge using priority queue (O(N log P))
+while (!pq.empty()) {
+    MergeElement top = pq.top();
+    pq.pop();
+    merge_order[out_idx++] = top.source_idx;
+    
+    // Add next element from same chunk
+    if (chunk_pos[c] < recv_displs[c] + recv_counts[c]) {
+        pq.push({recv_r2[chunk_pos[c]], chunk_pos[c], c});
+    }
+}
+--------------------------------------------------------------------------------
+
+================================================================================
+3. O(N) Energy Calculation with Distributed Prefix Sum
+================================================================================
+
+WHY IT IS BETTER:
+The Baseline (verification) energy calculation uses an exact pairwise Coulomb sum, which is O(N^2). This is computationally impossible for N=10^7.
+
+The Optimized implementation uses the Gauss's Law approximation consistent with the SPARC physics model (spherically symmetric shells). By sorting particles radially, the potential energy $U = \sum q_i \frac{Q_{enclosed}(r_i)}{r_i}$ can be computed in O(N).
+We use `MPI_Exscan` to compute the prefix sum of charges across ranks, allowing each rank to know the total charge $Q_{enclosed}$ from all inner ranks without gathering data.
+
+CODE SNIPPET (src/core/compute_energy.cpp):
+--------------------------------------------------------------------------------
+// Get charge sum from all previous ranks using Exscan
+double prefix_from_prev_ranks = 0.0;
+MPI_Exscan(&local_charge, &prefix_from_prev_ranks, 1, MPI_DOUBLE, MPI_SUM, mpi.comm);
+
+// Compute potential energy locally using the prefix sum
+double Q_inner = prefix_from_prev_ranks;
+
+for (int i = 0; i < n; i++) {
+    double r = std::sqrt(ps.r2[i]);
+    if (r > 1e-15) {
+        // O(N) calculation instead of O(N^2)
+        local_potential += ps.q[i] * Q_inner / r;
+    }
+    Q_inner += ps.q[i];
+}
+--------------------------------------------------------------------------------
